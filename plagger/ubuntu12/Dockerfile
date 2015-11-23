@@ -1,4 +1,4 @@
-FROM quay.io/nabinno/dove-ubuntu12
+FROM quay.io/nabinno/dove-ubuntu12-dotfiles
 USER action
 ENV HOME /home/action
 ENV PATH /home/action/bin::$PATH
