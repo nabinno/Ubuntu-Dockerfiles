@@ -115,6 +115,7 @@ ADD root/.gitconfig /root/.gitconfig
 ADD root/.scripts /root/.scripts
 
 WORKDIR /home/action
+RUN adduser --disabled-password action
 RUN \
     sed -i "s/^#Protocol 2,1/Protocol 2/g" /etc/ssh/sshd_config && \
     sed -i "s/^#SyslogFacility AUTH/SyslogFacility AUTH/g" /etc/ssh/sshd_config && \
