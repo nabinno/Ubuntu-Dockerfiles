@@ -9,9 +9,6 @@ FROM ubuntu:16.04
 ENV HOME /home/action
 
 RUN \
-    echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list && \
-    echo "deb http://archive.ubuntu.com/ubuntu precise-updates main universe" >> /etc/apt/sources.list && \
-    echo "deb http://archive.ubuntu.com/ubuntu precise-security main universe" >> /etc/apt/sources.list && \
     sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \
     apt-get update && \
     apt-get -y upgrade && \
@@ -85,11 +82,8 @@ RUN \
         libxt6 \
         libyaml-dev \
         man \
-        mysql-server \
         openssh-server \
         openssl \
-        postgresql \
-        postgresql-contrib \
         psmisc \
         ruby1.9.3 \
         s3cmd \
