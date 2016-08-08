@@ -33,15 +33,12 @@ RUN \
         htop \
         imagemagick \
         libarchive-dev \
-        libarchive12 \
         libbz2-1.0 \
         libbz2-dev \
         libc6 \
         libcurl3 \
         libcurl3-gnutls \
         libcurl4-openssl-dev \
-        libdb5.1 \
-        libdb5.1-dev \
         libevent-1.4-2 \
         libevent-core-1.4-2 \
         libevent-dev \
@@ -74,7 +71,6 @@ RUN \
         libreadline6-dev \
         libsndfile1-dev \
         libsqlite3-dev \
-        libssl0.9.8 \
         libxml2 \
         libxml2-dev \
         libxslt1-dev \
@@ -85,13 +81,12 @@ RUN \
         openssh-server \
         openssl \
         psmisc \
-        ruby1.9.3 \
+        ruby \
         s3cmd \
         screen \
         sqlite3 \
         sudo \
         telnet \
-        tsconf \
         unzip \
         util-linux \
         vim \
